@@ -1,12 +1,13 @@
 body {
-  font-family: "Josefin Sans";
-  background-color: #fffafb;
+  font-family: 'Josefin Sans';
+  background-color: #FFFAFB;
 }
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ff2625;
+  color: #FF2625;
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
@@ -54,20 +55,19 @@ body {
 
 .hero-banner-img {
   position: absolute;
-  display: flex;
-  justify-content: right;
-  right: 0px;
+  right: 40px;
   top: 0px;
   width: 700px;
   height: 900px;
   margin-top: -330px;
+
 }
 
 .exercise-card {
   width: 400px;
   height: 445px;
   background: #fff;
-  border-top: 4px solid #ff2625;
+  border-top: 4px solid #FF2625;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -93,8 +93,8 @@ body {
 }
 
 .search-btn:hover {
-  color: #ff2625 !important;
-  border: 1px solid #ff2625 !important;
+  color: #FF2625 !important;
+  border: 1px solid #FF2625 !important;
 }
 
 .exercise-video {
@@ -106,11 +106,12 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width:1200px) {
   .detail-image {
     width: 300px;
     height: 300px;
   }
+
 
   .react-horizontal-scrolling-menu--scroll-container {
     width: 500px;
@@ -122,14 +123,7 @@ body {
   }
 
   .hero-banner-img {
-    position: absolute;
-
-    justify-content: right;
-    right: 0px;
-    top: 0px;
-    width: 600px;
-    height: 800px;
-    margin-top: -160px;
+    display: none;
   }
 
   .exercise-card {
@@ -140,30 +134,11 @@ body {
     width: 320px;
     height: 300px;
   }
+
 }
-@media screen and (max-width: 980px) {
+
+@media screen and (max-width:400px) {
   .exercise-card {
     width: 280px;
-  }
-  .hero-banner-img {
-    width: 300px;
-    height: 500px;
-    margin-top: -158px;
-  }
-}
-@media screen and (max-width: 680px) {
-  .exercise-card {
-    width: 280px;
-  }
-  .hero-banner-img {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .exercise-card {
-    width: 280px;
-  }
-  .hero-banner-img {
-    display: none;
   }
 }
